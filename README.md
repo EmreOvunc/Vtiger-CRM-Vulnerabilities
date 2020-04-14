@@ -5,7 +5,7 @@ Vtiger CRM v7.2.0 has Cross-Site Scripting (XSS) and directory listing vulnerabi
 Reflected XSS in the [Vtiger CRM v7.2.0](https://www.vtiger.com/open-source-crm/download-open-source/) can result in an attacker performing malicious actions to users who open a maliciously crafted link or third-party web page.
 
 ### PoC
-To exploit vulnerability, someone could use a GET request to **'http://[server]//vtigercrm/index.php?app=&module=Campaigns&view=%3Ctest%22%3E%3Cscript%3Ealert(document.domain)%3C%2fscript%3E'** by manipulating **'view'** parameter in the request body to impact users who open a maliciously crafted link or third-party web page.
+To exploit vulnerability, someone could use a GET request to **'http://[server]//vtigercrm/index.php?app=&module=Campaigns&view=%3Ctest%22%3E%3Cscript%3Ealert(document.domain)%3C%2fscript%3E'** by manipulating **'view'** parameter in the request header to impact users who open a maliciously crafted link or third-party web page.
 
 
 ```
