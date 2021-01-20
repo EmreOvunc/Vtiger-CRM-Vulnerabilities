@@ -1,6 +1,9 @@
 # Vtiger-CRM-Vulnerabilities
 Vtiger CRM v7.2.0 has Cross-Site Scripting (XSS) and directory listing vulnerabilities.
 
+# CVE-2020-19362
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19362
+
 ## Vtiger CRM Reflected XSS Vulnerability
 Reflected XSS in the [Vtiger CRM v7.2.0](https://www.vtiger.com/open-source-crm/download-open-source/) can result in an attacker performing malicious actions to users who open a maliciously crafted link or third-party web page.
 
